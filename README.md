@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>صحتك ومرحك - موقع للصحة والترفيه</title>
+  <meta name="description" content="موقع عربي يقدّم مقالات ونصائح في الصحة والترفيه، فيديوهات، وصفات، وتمارين بسيطة." />
+  <style>
+    :root{--accent:#f6c12d;--bg:#f8fafb;--card:#ffffff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0;background:var(--bg);color:#111}
+    header{background:#fff;box-shadow:0 2px 8px rgba(15,23,42,0.06);position:sticky;top:0;z-index:50}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700}
+    .logo .mark{width:44px;height:44px;background:var(--accent);display:inline-grid;place-items:center;border-radius:8px;color:#111}
+    nav ul{display:flex;gap:14px;list-style:none;padding:0;margin:0}
+    a{color:inherit;text-decoration:none}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:20px;padding:28px 0}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+    .hero-main h1{font-size:28px;margin:0 0 10px}
+    .hero-main p{color:var(--muted);margin:0 0 16px}
+    .cta{display:inline-block;background:var(--accent);padding:10px 16px;border-radius:8px;font-weight:600}
+    .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    .post{border-radius:10px;overflow:hidden}
+    .post img{width:100%;height:160px;object-fit:cover;display:block}
+    .post .meta{padding:12px}
+    .sidebar .widget{margin-bottom:14px}
+    .categories{display:flex;flex-wrap:wrap;gap:8px}
+    .cat{background:#f3f4f6;padding:8px 10px;border-radius:999px;font-size:13px}
+    footer{padding:28px 0;margin-top:30px;color:var(--muted)}
+    @media(max-width:980px){.hero{grid-template-columns:1fr} .posts{grid-template-columns:repeat(2,1fr)} }
+    @media(max-width:640px){.posts{grid-template-columns:1fr} .logo span{display:none} nav ul{display:none}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="logo">
+      <div class="mark">س</div>
+      <div>
+        <div style="font-size:16px">صحتك ومرحك</div>
+        <div style="font-size:12px;color:var(--muted)">صحة • ترفيه • وصفات • فيديو</div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#health">الصحة</a></li>
+        <li><a href="#fun">الترفيه</a></li>
+        <li><a href="#recipes">وصفات</a></li>
+        <li><a href="#about">من نحن</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <section class="hero">
+    <div class="card hero-main">
+      <h1>موقع يجمع بين الصحة والمرح — نصائح يومية سهلة التطبيق</h1>
+      <p>مقالات مبسطة، تمارين قصيرة، وصفات صحية، وقوائم ترفيهية لتجعل يومك أفضل. محتوى عربي واضح ومفيد للجميع.</p>
+      <a class="cta" href="#latest">اكتشف الآن</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <div>
+        <strong>صحتك ومرحك</strong>
+        <div style="color:var(--muted)">حقوق النشر © 2025</div>
+      </div>
+      <div style="color:var(--muted)">سياسة الخصوصية • شروط الاستخدام • تواصل</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
